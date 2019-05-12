@@ -7,7 +7,8 @@ import (
 )
 
 /**
-从控制台霍去病输入的csdn首页的地址输入1停止输入
+从控制台霍去病输入的csdn首页的地址输入
+爬取页面信息
  */
 func main()  {
 	var url string
