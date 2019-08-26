@@ -11,7 +11,6 @@ import (
 )
 
 func main()  {
-
 	conn,err := net.Dial("tcp",common.GetIp()+":8888")
 	if err != nil {
 		fmt.Println("client dial err=",err)
@@ -29,7 +28,6 @@ func main()  {
 		line =strings.Trim(line,"\r\n")
 		if  line == "exit" {
 			fmt.Println("客户端退出了")
-
 		}
 		jsonIn.Information = line
 		jsonIn.Time		   = time.Now()
